@@ -1,0 +1,562 @@
+:root {
+  --grey: #eeeeee;
+  --navy: #053b50;
+  --blue: #176b87;
+  -teal: #64ccc5;
+  --shadow : 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'WorkSans', sans-serif;
+    min-height: 2000px;
+}
+
+#hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(img/prewedding.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+#hero h4, #hero h1, #hero p {
+    text-shadow: var(--shadow);
+}
+
+#hero h4 {
+    color: var(--grey);
+    font-family: 'Work Sans';
+    font-size: 1.6rem;
+}
+
+#hero h1 {
+    font-family:'Dancing Script';
+    color: var(--grey);
+    font-size: 6rem;
+}
+
+#hero p {
+    color: var(--grey);
+    font-family: 'Work Sans';
+    font-size: 1.3rem;
+}
+
+#hero a{
+    background-color: var(--blue);
+    color: var(--grey);
+    font-family: 'Work Sans';
+    box-shadow: var(--shadow);
+    margin: auto;
+}
+
+#hero a:hover {
+    background-color: var(--navy);
+    color: var(--grey);
+    font-family: 'Work Sans';
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(3px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+
+.mynavbar .navbar-brand, 
+.mynavbar .offcanvas-title {
+    font-family: Dancing Script;
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+
+.mynavbar .nav-link{
+    font-family: 'Work Sans' sans-serif;
+    
+}
+
+.home {
+    background-image: url(img/floral.png);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.home h2,
+.story h2{
+    color: var(--navy);
+    font-family: Dancing Script;
+    font-size: 5rem;
+    font-weight: bold; 
+    text-shadow: var(--shadow);
+}
+
+.home h3{
+    font-family: 'Work Sans' sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--navy);
+}
+
+.home p{
+    color: var(--navy);
+}
+.home .couple {
+    margin-top: 100px;
+}
+
+.home .couple h3{
+    font-family: Dancing Script;
+    font-size: 2.4rem;
+    color: var(--navy);
+}
+
+.home .couple img{
+    width: 100%;
+}
+
+.home .flower {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+}
+
+.home .flower i{
+    margin: auto;
+    color: var(--blue);
+}
+
+.home .surat h3{
+    font-weight: bold;
+    text-shadow: var(--shadow);
+}
+
+.info {
+    background-color: var(--navy);
+    color: var(--grey);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.info h2 {
+    font-family: Dancing Script;
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: var(--shadow);
+}
+
+
+.info .alamat{
+    font-size: 1.1rem;
+    font-family: 'Work Sans' sans-serif;
+}
+
+.info .card {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: var(--grey) !important;
+    border: 5px solid var(--grey);
+    border-radius: 50px;
+    box-shadow: var(--shadow);
+}
+
+.info .card-header {
+    background-color: rgba(255, 255, 255, 0) !important;
+    border-bottom: 2px solid var(--grey);
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-family: Dancing Script;
+}
+
+.info .card-body{
+    font-size: 1rem;
+}
+
+.info .card-footer{
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: none;
+    font-size: 1rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: 'Work Sans' sans-serif;
+}
+
+.info a{
+    background-color: var(--grey);
+    border: none;
+    font-family: 'Work Sans' sans-serif;
+    color: var(--blue);
+    box-shadow: var(--shadow);
+}
+
+.info a:hover{
+    background-color: var(--blue);
+    border: none;
+    font-family: 'Work Sans' sans-serif;
+    color: var(--grey);
+    box-shadow: var(--shadow);
+}
+
+.story,
+.gallery {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.story span
+{
+    font-family: 'Work Sans';
+    color: var(--blue);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.story p {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Work Sans';
+}
+
+.timeline {
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.timeline::before{
+    content:'';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 5px;
+    background-color: var(--grey);
+    left: 50%;
+    border-radius: 50px;
+}
+
+.timeline li{
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.timeline li::before, 
+.timeline li::after{
+    content: '';
+    display: table;
+}
+
+.timeline li::after{
+    clear: both;
+}
+
+.timeline li .timeline-img{
+    width: 160px;
+    height: 160px;
+    background-color: #64ccc5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+    width: 40%;
+    float: left;
+    border: 1px solid var(--navy);
+    padding: 2rem;
+    position: relative;
+    border-radius: 8px;
+    background-color: var(--navy);
+    color: var(--grey);  
+}
+
+.timeline li .timeline-panel span{
+    color: var(--grey);
+}
+
+.timeline li .timeline-panel::before{
+    content:'';
+    display: inline-block;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 15px solid var(--navy);
+    border-right: 0 solid var(--navy);
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    right: -15px;
+}
+.timeline li .timeline-panel::after{
+    content:'';
+    display: inline-block;
+    position: absolute;
+    border-top: 14px solid transparent;
+    border-left: 14px solid var(--navy);
+    border-right: 0 solid var(--navy);
+    border-bottom: 14px solid transparent;
+    top: 81px;
+    right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+    float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before{
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+}
+
+.gallery{
+    background-color: var(--blue);
+}
+
+.gallery h2 {
+    color: var(--grey);
+    font-family: Dancing Script;
+    font-size: 5rem;
+    font-weight: bold; 
+    text-shadow: var(--shadow);
+}
+
+.gallery span {
+    font-family: 'Work Sans' sans-serif;
+    color: var(--grey);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.gallery p {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Work Sans';
+    color: var(--grey);
+}
+
+.rsvp h2 {
+    color: var(--navy);
+    font-family: Dancing Script;
+    font-size: 5rem;
+    font-weight: bold; 
+    text-shadow: var(--shadow);
+}
+
+.rsvp {
+   
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    background-image: url(img/floral.png);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.rsvp p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Work Sans';
+    color: var(--navy);
+}
+
+.rsvp form label {
+    color: var(--navy);
+}
+
+.rsvp button{
+    background-color: var(--navy);
+    color: var(--grey);
+    border: var(--navy);
+}
+
+.rsvp button:hover {
+    background-color: var(--blue);
+    color: var(--grey);
+    border: var(--blue);
+}
+
+.rsvp #gifts span{
+    font-family: Dancing Script;
+    color: var(--navy);
+    font-size: 5rem;
+    font-weight: bold; 
+    text-shadow: var(--shadow);
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+footer {
+    padding: 3rem;
+    background-color: var(--navy);
+    color: var(--grey);
+}
+
+footer a{
+    color: var(--grey);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color:cadetblue;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+/* media Query */
+/* extra large */
+@media (max-width: 1200px){
+    .home .flower {
+        transform: translateX(-50%) translateY(45px);
+    }
+}
+/* tablet1*/
+@media (max-width: 780px){
+    html {
+        font-size: 75%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 50px;
+        margin: 5px;
+    }
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .home .flower {
+        display: none;
+    }
+
+    .sticky-top{
+        overflow: hidden;
+    }
+
+    .timeline::before{
+        left: 60px;
+    }
+
+    .timeline li .timeline-img {
+        left: 15px;
+        margin-left: 45px;
+        top: 16px;
+    }
+
+    .timeline li .timeline-panel{
+        width: calc((100% - 200px));
+        float: right;
+    }
+
+    .timeline li .timeline-panel::before{
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+    .timeline li .timeline-panel::after{
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
+    }
+
+}
+/* hp */
+@media (max-width: 576px){
+    html {
+        font-size: 65%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 40px;
+        margin: 3px;
+    }
+
+    home .flower {
+        display: none;
+
+    }
+
+    .timeline li .timeline-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline li .timeline-panel {
+        width: 65%;
+        transform: translateX(-20px);
+    }
+
+    .timeline li .timeline-panel::before{
+        top: 30px;
+    }
+    .timeline li .timeline-panel::after{
+        top: 31px;
+    }
+}
